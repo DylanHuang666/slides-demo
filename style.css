@@ -12,6 +12,9 @@
     position: absolute;
     top: 0;
 }
+.images>img:nth-child(1){
+    z-index: 1;
+}
 .images>img.current{
     left: 0;
     transform: translateX(0);
