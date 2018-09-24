@@ -27,3 +27,13 @@
     transform: translateX(-100%);
     z-index: 1;
 }
+.button{
+    text-align: center;
+}
+.button>span{
+    color: purple;
+    padding: 0 15px;
+}
+.button>span.bold{
+    font-weight: bold;
+}

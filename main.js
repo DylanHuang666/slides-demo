@@ -8,6 +8,7 @@ setInterval(() => {
             makeEnter($(a.currentTarget))
         })
     makeCurrent(getImage(n+1))
+    $(`.button>span:nth-child(${x(n+1)})`).addClass('bold').siblings().removeClass('bold')
     n+=1
 }, 2000)
 
@@ -25,6 +26,7 @@ function 初始化位置(){
     n=1
     $(`.images>img:nth-child(${n})`).addClass('current')
         .siblings().addClass('enter')
+    $(`.button>span:nth-child(${n})`).addClass('bold').siblings().removeClass('bold')    
 }
 
 function getImage(n){
